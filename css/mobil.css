@@ -1,0 +1,704 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#entete
+{
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding: 10px 0px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
+    position: fixed;
+    z-index: 1000;
+}
+.menu-bar
+{
+    display: none;
+}
+
+
+#menu_boutton
+{
+    float: right;
+    width: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+#menu_boutton div
+{
+    float: left;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(1, 1, 105);
+    margin-bottom: 2px;
+}
+#entete #logo_tel
+{
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+#menu {
+    display: none; /* Le menu est caché au départ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; /* Largeur du menu */
+    background-color: rgb(1, 1, 105);
+    transition: transform 1.5s ease, opacity 1s ease-out;
+    transform: translateX(-100%); /* Le menu est caché à gauche au départ */
+    opacity: 0; /* Initialement, l'opacité est 0 */
+    z-index: 999;
+    padding: 70px 5%;
+}
+#menu_boutton
+{
+    float: right;
+    width: 30px;
+    margin-top: 17px;
+    margin-right: 20px;
+}
+
+#menu a
+{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+#menu a:hover
+{
+    transform: scale(1.02);
+}
+#menu.show {
+    transform: translateX(0); /* Le menu glisse vers la droite */
+    opacity: 1; /* L'opacité devient 1 (visible) */
+    display: block; /* Le menu devient visible */
+}
+.x {
+    position: relative;
+    width: 10px;
+    height: 20px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    margin-right: -10px;
+}
+
+
+.x {
+    position: relative;
+    width: 30px;
+    height: 5px;
+}
+
+.x::before,
+.x::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.x::before {
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.x::after {
+    width: 100%;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+#menu ion-icon
+{
+    width: 15px;
+    margin-left: -2px;
+    margin-bottom: -3px;
+}
+
+
+
+
+
+/* Banner a-propos*/
+
+#banner
+{ 
+    padding: 100px 5%;
+}
+#banner h2
+{
+    font-size: 12px;
+}
+#banner p
+{
+    font-size: 15px;
+    line-height: 1.2;
+}
+#banner a
+{
+    border-radius: 10px;
+    padding: 3px 2%;
+    font-size: 10px;
+    margin-top: 15px;
+}
+#banner ion-icon
+{
+    width: 30px;
+    margin-left: -10px;
+    margin-bottom: -2px;
+}
+/* historiciter */
+#historiciter
+{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 40px 0px;
+    padding: 20px 5%;
+}
+#historiciter h2
+{
+    margin-bottom: 5px;
+}
+#historiciter p
+{
+    font-size: 18px;
+    color: black;
+}
+/* mission */
+#mission-content
+{
+    padding: 30px 5%;
+}
+
+#mission-content p
+{
+    margin-top: 15px;
+}
+/* nos-valeurs */
+#nos-valeurs
+{
+    padding: 30px 5%;
+}
+/* nos_activites */
+#nos_activites
+{
+    padding: 30px 5%;
+}
+/* Benevolat */
+#pourquoi_le_benevolat
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#pourquoi_le_benevolat h2
+{
+    font-size: 20px;
+}
+#pourquoi_le_benevolat p
+{
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: left;
+}
+#pourquoi_le_benevolat a
+{
+    padding: 5px 2%;
+    font-size: 14px;
+}
+#benevolat_section1
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 5%;
+
+}
+#benevolat_section1 img
+{
+    border-radius: 10px;
+}
+#benevolat_section1 h2
+{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+#benevolat_section1 p
+{
+    font-size: 18px;
+}
+#benevolat_section1 a
+{
+    padding: 5px 3%;
+    margin-left: 25%;
+}
+
+#benevolat_section2
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column-reverse; /* Inverse l'ordre des éléments */
+}
+#benevolat_section2 img
+{
+    border-radius: 10px;
+}
+#benevolat_section2 h2
+{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+#benevolat_section2 p
+{
+    font-size: 18px;
+}
+#benevolat_section2 a
+{
+    padding: 5px 3%;
+    margin-left: 25%;
+}
+/* blog */
+#blog
+{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 5%;
+    gap: 30px;
+}
+#blog img
+{
+    width: 100%;
+}
+
+#blog h2
+{
+    width: 100%;
+    font-size: 17px;
+}
+#blog p{
+    color: rgb(1, 1, 105);
+}
+#blog ion-icon
+{
+    margin-bottom: -4px;
+}
+/* les sections */
+#les_sections
+{
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 5%;
+}
+#les_sections h2
+{
+    font-size: 19px;
+}
+#les_sections p
+{
+    margin-top: 10px;
+    text-align: left;
+}
+/* section sante */
+#section_sante
+{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 30px 5%;
+}
+#section_sante h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/* sectione education */
+#section_education
+{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: column-reverse; /* Inverse l'ordre des éléments */
+}
+#section_education h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+/* section culture */
+#section_culture
+{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 30px 5%;
+}
+#section_culture h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+
+
+
+/* equipe */
+#h2-equipe
+{
+    margin-top: 50px;
+}
+.owl-carousel
+{
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 0px;
+}
+.owl-carousel .item p
+{
+    font-size: 14px;
+    line-height: 1.2;
+}
+#button-equipe
+{
+    float: left;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+#button-equipe .bouton-equipe
+{
+    float: left;
+    width: 18%;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px 10%;
+    text-decoration: none;
+}
+#button-equipe .bouton-equipe:hover
+{
+    transition: 0.5s;
+    border: solid 1px rgb(1, 1, 105);
+    background-color: white;
+    color: rgb(1, 1, 105);
+}
+
+/* equipe */
+#banner_equipe
+{
+    padding: 60px 5%;
+}
+#banner_equipe h2
+{
+    font-size: 12px;
+}
+#banner_equipe p
+{
+    font-size: 15px;
+}
+#banner_equipe a
+{
+    padding: 3px 1%;
+    font-size: 12px;
+}
+#banner_equipe ion-icon
+{
+    width: 25px;
+    margin-left: -7px;
+    margin-bottom: -2px;
+}
+#equipe_content
+{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0px 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+}
+#equipe_content  a
+{
+    text-decoration: none;
+    color: black;
+}
+#equipe_content img
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 110px;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 10px white;
+    box-shadow: 0px 0px 10px 10px rgba(1, 1, 105, 0.3);
+}
+#equipe_content h2
+{
+    float: left;
+    margin-top: 17px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(1, 1, 105) !important;
+}
+#equipe_content p
+{
+    float: left;
+    text-align: center;
+    margin-top: -5px;
+    font-size: 15px;
+    color: rgb(1, 1, 105);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pied */
+#pied
+{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5% 5%;
+    gap: 20px;
+    margin-top: 70px;
+}
+/* banner_benevolat */
+#banner_benevolat
+{
+    background-size: cover;    
+    padding: 100px 10%;
+    text-align: center;
+    margin-top: 2px;
+}
+#banner_benevolat h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_benevolat p
+{
+    font-size: 20px;
+    margin-top: 5px;
+}
+/* benevolat description */
+
+#pourquoi_le_benevolat
+{
+    margin-top: 30px;
+}
+#pourquoi_le_benevolat h2
+{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+#pourquoi_le_benevolat a
+{
+    padding: 5px 2%;
+    font-size: 15px;
+}
+/* communauter */
+#notre_communaute
+{
+    padding: 0px 5%;
+}
+#notre_communaute h2
+{
+    color: rgb(1, 1, 105) !important;
+    font-size: 20px;
+}
+#notre_communaute p
+{
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* differentes sections */
+#h2-differentes_section
+{
+    font-size: 11px;
+    padding: 0px 5%;
+}
+/* bienfaits */
+#bienfaits
+{
+    padding: 30px 5%;
+}
+#bienfaits h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#bienfaits p
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+/* Contact */
+#banner_contact
+{   
+    padding: 100px 10%;
+}
+#banner_contact p
+{
+    font-size: 15px;
+    line-height: 1.2;
+}
+#design_contact
+{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    background-image: url("../image/benevolat_bg.jpg");
+    background-position: center;
+    background-color: rgba(0, 0 ,0, 0.4);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    flex-direction: column-reverse; /* Inverse l'ordre des éléments */
+
+}
+#contact h2
+{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#contact
+{
+    padding: 5%;
+    width: 100%;
+    margin-left: 0%;
+}
+#adresse
+{
+    float: left;
+    margin-top: -40px;
+    width: 100%;
+    margin-left: 20px;
+}
+#adresse p
+{
+    color: rgb(255, 255, 255) !important;
+}
+#adresse a
+{
+    color: rgb(255, 255, 255) !important;
+}
+#adresse h2
+{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* banner_benevolat */
+#banner_benevolat
+{    
+    padding: 100px 10%;
+}
+#banner_benevolat h2
+{
+    font-size: 18px;
+}
+#banner_benevolat p
+{
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* don */
+#pourquoi_donner
+{
+    padding: 20px 5%;
+}
+#pourquoi_donner h2
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#don
+{
+    padding: 0px 0%;
+}
+#infos_perso
+{
+    width: 100%;
+    margin-left: 0px;
+
+}
+#donation_container
+{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20px;
+}
+/* securiter */
+#securite_don
+{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px;
+}

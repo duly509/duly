@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobil.css" media="screen and (max-width:760px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un don</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <img src="image/logoceducc.png" id="logo">
+        <ul>
+          <li><a href="index.html"> Accueil</a></li>
+          <li><a href="apropos.html">A propos</a></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="apropos.html">Qui-sommes nous?</a></li>
+                    <li><a href="#">Partenaire</a></li>
+                    <li>
+                      <a href="#"> Equipe<i class="fas fa-caret-right"></i></a>
+                      
+                    </li>
+                    <li><a href="#">activites</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="benevolat.html">Faire du benevolat</a>
+          </li>
+          <li> <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a></li>
+          <li> <a href="section.html">Les sections</a></li>
+        </ul>
+      </div>
+
+
+      <!-- menu tel -->
+      <div id="entete">
+        <img src="image/logoceducc.png" id="logo_tel"/>
+        <div onclick="affichermenu();" id="menu_boutton">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu">
+            <div onclick="enlevermenu();" class="cross">
+                <div class="x"></div>
+            </div>
+            <a href="index.html"> Accueil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="benevolat.html">Faire du benevolat</a>
+            <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
+            <a href="section.html">Les sections</a>
+           
+        </div>
+    </div>
+
+    
+
+    <div id="pourquoi_donner">
+        <h2>Pourquoi faire un don a CEDUCC?</h2>
+        <div id="pour_culture">
+            
+            <p> <strong>Culture :</strong> sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur.</p>
+         </div>
+    
+    
+         <div id="pour_sante">
+            <p> <strong>Sante :</strong> sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur.</p>
+         </div>
+    
+    
+    
+         <div id="pour_education">
+            <p> <strong>Education  :</strong> sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur.</p>
+
+         </div>
+    </div>
+
+
+
+
+
+
+   <div id="don">
+    <div id="infos_perso">
+        
+            <h2>informations Personel</h2>
+            <form action="" method="post">
+                <input type="email" name="email" placeholder="Email"  required>
+                <input type="text" name="nom" placeholder="Nom et Prenom" required>
+                <input list="pays-list" id="pays" name="pays" placeholder="Pays" required>
+                    <datalist id="pays-list">
+                        <option value="Haiti">
+                        <option value="USA">
+                        <option value="Chili">
+                        <option value="France">
+                        <option value="Canada">
+                        <option value="Brazil">
+                        <option value="Germany">
+                        <option value="Japan">
+                    </datalist>
+                
+                <input type="text"  name="ville" placeholder="Ville" required>
+                <input type="text"  name="code_postale" placeholder="Code Postale" required>
+                <input type="text"  name="adresse" placeholder="Adresse" required>
+            </form>
+        </div>
+        
+
+
+
+
+
+     <div id="donation_container">
+        <h2>Faites un don</h2>
+        <p class="label_titre">Votre soutien nous aide à continuer notre mission.</p>
+
+        <form id="donationForm">
+            <div class="montant-options">
+                <input type="radio" id="montant10" name="montant" value="10" required>
+                <label for="montant10">10$</label>
+
+                <input type="radio" id="montant20" name="montant" value="20">
+                <label for="montant20">20$</label>
+
+                <input type="radio" id="montant50" name="montant" value="50">
+                <label for="montant50">50$</label>
+
+                <input type="radio" id="montant100" name="montant" value="100">
+                <label for="montant100">100$</label>
+
+                <input type="radio" id="montantAutre" name="montant" value="autre">
+                <label for="montantAutre">Autre</label>
+            </div>
+
+            <!-- Champ pour montant personnalisé -->
+            <input type="number" id="autreMontant" name="autreMontant" placeholder="Montant personnalisé" min="1" style="display: none;">
+
+            <!-- Choisir le type de don -->
+            <div class="frequency-options">
+                <input type="radio" id="donUnique" name="frequency" value="unique" required checked>
+                <label for="donUnique">Paiement unique</label>
+
+                <input type="radio" id="donMensuel" name="frequency" value="mensuel">
+                <label for="donMensuel">Abonnement mensuel</label>
+            </div>
+
+            <button type="button" id="stripe-button">Valider le don</button>
+        </form>
+     </div>
+   </div>
+
+
+
+
+
+
+   <div id="securite_don">
+    <div>
+        <h2>Vos informations sont securisees</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum minus dolorum nam! Delectus sunt corrupti rem id ipsam porro laudantium quasi rerum repellat in dolor vitae, modi cupiditate, pariatur nisi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sed sint necessitatibus alias quo veritatis porro architecto sapiente tempore, consequuntur recusandae, in cumque perspiciatis suscipit sit laborum repellat asperiores similique.</p>
+
+    </div>
+
+    <div>
+        <h2>Vos avantages </h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum minus dolorum nam! Delectus sunt corrupti rem id ipsam porro laudantium quasi rerum repellat in dolor vitae, modi cupiditate, pariatur nisi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sed sint necessitatibus alias quo veritatis porro architecto sapiente tempore, consequuntur recusandae, in cumque perspiciatis suscipit sit laborum repellat asperiores similique.</p>
+    </div>
+
+    <div>
+        <h2>Que peut faire CEDUCC grace a vos dons?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum minus dolorum nam! Delectus sunt corrupti rem id ipsam porro laudantium quasi rerum repellat in dolor vitae, modi cupiditate, pariatur nisi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum sed sint necessitatibus alias quo veritatis porro architecto sapiente tempore, consequuntur recusandae, in cumque perspiciatis suscipit sit laborum repellat asperiores similique.</p>
+        
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- pied de la page -->
+
+    <div id="pied">
+        <div class="ion-icon">
+           <h2>Menu</h2>
+            <a href="index.html"><ion-icon name="arrow-forward-outline"></ion-icon> Accueil</a>
+            <a href="apropos.html"><ion-icon name="arrow-forward-outline"></ion-icon> A propos</a>
+            <a href="contact.html"><ion-icon name="arrow-forward-outline"></ion-icon> Contact</a>
+            <a href="benevolat.html"><ion-icon name="arrow-forward-outline"></ion-icon> Faire du benevolat</a>
+            <a href="don.html"><ion-icon name="arrow-forward-outline"></ion-icon> faire un don</a>
+    
+        </div>
+        <div class="ion-icon">
+            <h2>Partenaire</h2>
+            <a href=""><ion-icon name="arrow-forward-outline"></ion-icon> UNICEF</a>
+            <a href="a propos.html"><ion-icon name="arrow-forward-outline"></ion-icon> MISSION INCLUSION</a>
+            <a href=""><ion-icon name="arrow-forward-outline"></ion-icon> DINEPA</a>
+            <a href=""><ion-icon name="arrow-forward-outline"></ion-icon> MSPP</a>
+            <a href="benevolat.html"><ion-icon name="arrow-forward-outline"></ion-icon> MENFP</a>
+            <a href="don.html"><ion-icon name="arrow-forward-outline"></ion-icon> U-REPORT</a>
+        </div>
+    
+    
+        <div class="ion-icon">
+            <h2>Les sections</h2>
+            <a href="partenaire.html"><ion-icon name="arrow-forward-outline"></ion-icon> Les U-reporter</a>
+            <a href="mission.html"><ion-icon name="arrow-forward-outline"></ion-icon> Education</a>
+            <a href="benevolat.html"><ion-icon name="arrow-forward-outline"></ion-icon> PFE</a>
+            <a href="don.html"><ion-icon name="arrow-forward-outline"></ion-icon> WASH/C-TED</a>
+            <a href="compte.html" class="compte"><ion-icon name="arrow-forward-outline"></ion-icon> Sante</a>
+            <a href="don.html"><ion-icon name="arrow-forward-outline"></ion-icon> Culture</a>
+        </div>
+    
+    
+        <div>
+            <h2>Contact</h2>
+                <p><ion-icon name="call-outline"></ion-icon> : 37682323</p>
+                <p><ion-icon name="mail-outline"></ion-icon> : lyovensdurandisse@gmail.com</p>
+                <p><ion-icon name="location-outline"></ion-icon> : Route de Darbonne, Leogane Haiti #20</p>
+    
+                <ul class="contact">
+                    <li><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                </ul>
+                
+        </div>
+       </div>
+
+
+
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    // Afficher ou cacher le champ pour le montant personnalisé
+    document.querySelectorAll('input[name="montant"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            const autreMontant = document.getElementById('autreMontant');
+            if (this.value === "autre") {
+                autreMontant.style.display = "block"; // Afficher le champ de saisie
+            } else {
+                autreMontant.style.display = "none"; // Cacher le champ si autre n'est pas sélectionné
+                autreMontant.value = ""; // Réinitialiser la valeur du champ
+            }
+        });
+    });
+</script>
+<script src="javascript/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1551 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(252, 252, 252);
+    font-family: "Montserrat", sans-serif;
+}
+#entete
+{
+    display: none;
+}
+:root {
+    --color-primary: #0073ff;
+    --color-white: rgb(1, 1, 105);
+    --color-black:  white;
+}
+.menu-bar img
+{
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+}
+.menu-bar ion-icon 
+{
+    color: rgb(1, 1, 105);
+    
+}
+.menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
+
+}
+  
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+  
+.menu-bar ul li {
+    padding: 10px 10px;
+    position: relative;
+}
+  
+.menu-bar ul li a {
+    font-size: 18px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+
+  
+  /* dropdown menu style */
+.dropdown-menu {
+    display: none;
+    background-color: white;
+  }
+  
+
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+.menu-bar #logo
+  {
+      float: left;
+      width: 150px;
+      padding-top: 15px;
+      padding-left: 15px;
+      transition: transform 0.3s ease-in-out; 
+  }
+.menu-bar #logo:hover
+  {
+      transform: scale(1.02);
+  }
+  
+  
+  
+
+
+
+
+
+
+
+/* Banner a-propos*/
+
+#banner
+{
+    float: left;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(1, 1, 105, 0.6)), url('../image/bg.JPG') no-repeat bottom center; 
+    background-size: cover;  
+    padding: 180px 15%;
+    text-align: center;
+    margin-top: 70px;
+}
+#banner h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner p
+{
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+#banner a
+{
+    float: left;
+    margin-left: 35%;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 3%;
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#banner a:hover
+{
+    background-color: white;
+    color: rgb(1, 1, 105);
+    transition: transform 0.3s ease-in-out; 
+}
+#banner a:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+#banner ion-icon
+{
+    width: 40px;
+    margin-left: -8px;
+    margin-bottom: -2px;
+}
+
+/* banner_benevolat */
+#banner_benevolat
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 2px;
+}
+#banner_benevolat h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_benevolat p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* benevolat description */
+
+#pourquoi_le_benevolat
+{
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 30px 5%;
+    text-align: center;
+}
+#pourquoi_le_benevolat h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+}
+#pourquoi_le_benevolat p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+#pourquoi_le_benevolat a
+{
+    float: left;
+    background-color: rgb(1, 1, 105);
+    border-radius: 5px;
+    padding: 5px 1%;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+}
+#pourquoi_le_benevolat a:hover
+{
+    background-color: rgb(0, 0, 70);
+}
+
+#benevolat_section1
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 40px 8%;
+
+}
+#benevolat_section1 img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+#benevolat_section1 h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+#benevolat_section1 p
+{
+    font-size: 18px; 
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+#benevolat_section1 a
+{
+    float: left;
+    background-color: #008f39;
+    border-radius: 5px;
+    padding: 10px 3%;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+#benevolat_section1 a:hover
+{
+    background-color: #01702e;
+}
+#benevolat_section2
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 45px 8%;
+
+}
+#benevolat_section2 img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+#benevolat_section2 h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+#benevolat_section2 p
+{
+    font-size: 18px; 
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+#benevolat_section2 a
+{
+    float: left;
+    background-color: rgb(1, 1, 105);
+    border-radius: 5px;
+    padding: 10px 3%;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 28%;
+    margin-top: 50px;
+}
+#benevolat_section2 a:hover
+{
+    background-color: rgb(0, 0, 70);
+}
+
+#notre_communaute
+{
+    width: 100%;
+    float: left;
+    padding: 0px 10%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+#notre_communaute h2
+{
+    color: rgb(1, 1, 105) !important;
+    font-size: 25px;
+}
+#notre_communaute p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* bienfaits */
+#bienfaits
+{
+    float: left;
+    width: 100%;
+    float: left;
+    padding: 30px 10%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 100px;
+}
+#bienfaits h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#bienfaits p
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+#bienfaits ul
+{
+    float: left;
+    width: 100%;
+}
+#bienfaits ul li
+{
+    float: left;
+    list-style: circle;
+    margin-left: 18px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* historiciter */
+#historiciter
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 20px 0px;
+    padding: 50px 5%;
+
+}
+#historiciter img
+{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+#historiciter img:hover
+{
+    transform: scale(1.02);
+}
+#historiciter h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#historiciter p
+{
+    font-size: 20px; 
+    color: rgb(1, 1, 105);
+    line-height: 1.5;
+}
+
+
+/* mission */
+#mission-content
+{
+    float: left;
+    width: 100%;
+    float: left;
+    padding: 30px 10%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#mission-content h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+}
+#mission-content p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+/* nos-valeurs */
+#nos-valeurs
+{
+    float: left;
+    width: 100%;
+    float: left;
+    padding: 30px 10%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#nos-valeurs h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+}
+#nos-valeurs p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* nos_activites */
+#nos_activites
+{
+    float: left;
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+    padding: 30px 10%;
+    text-align: center;
+}
+#nos_activites h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+}
+#nos_activites p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* equipe */
+#banner_equipe
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 2px;
+}
+#banner_equipe h2
+{
+    font-size: 22px;
+    color: white;
+}
+#banner_equipe p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+}
+#banner_equipe a
+{
+    float: left;
+    margin-left: 35%;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 3%;
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#banner_equipe a:hover
+{
+    background-color: white;
+    color: rgb(1, 1, 105);
+    transition: transform 0.3s ease-in-out; 
+}
+#banner_equipe a:hover
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+#banner_equipe ion-icon
+{
+    width: 40px;
+    margin-left: -8px;
+    margin-bottom: -2px;
+}
+#h2-equipe
+{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: rgb(1, 1, 105);
+}
+
+.owl-carousel
+{
+    float: left;
+    width: 40%;
+    margin-left: 28%;
+    margin-bottom: 40px;
+}
+.owl-carousel .item h2
+{
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+.owl-carousel .item img 
+{
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.owl-carousel .item img:hover 
+{
+    transform: scale(1.1); 
+}
+  
+
+.owl-carousel .item p
+{
+    float: left;
+    color: rgb(1, 1, 105);
+    font-size: 15px;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: bold;
+    line-height: 1;
+}
+#button-equipe
+{
+    float: left;
+    margin-left: 10px;
+    width: 30%;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+#button-equipe .bouton-equipe
+{
+    float: left;
+    width: 18%;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px 10%;
+    text-decoration: none;
+}
+#button-equipe .bouton-equipe:hover
+{
+    transition: 0.5s;
+    border: solid 1px rgb(1, 1, 105);
+    background-color: white;
+    color: rgb(1, 1, 105);
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 20px !important; 
+    width: 40px !important; 
+    height: 40px !important; 
+    background-color: rgb(1, 1, 105);
+    color: white !important;
+    border-radius: 50%; 
+    border: none !important;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 0.3s ease !important; 
+}
+
+/* Position de la flèche gauche */
+.owl-carousel .owl-nav button.owl-prev {
+    margin-left: -70px;
+    margin-top: -55px;
+}
+
+/* Position de la flèche droite */
+.owl-carousel .owl-nav button.owl-next {
+    right: -70px;
+    margin-top: -55px;
+}
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover
+{
+    width: 41px !important; 
+    height: 41px !important;
+    background-color: #ffffff; 
+    color: rgb(1, 1, 105) !important;
+    font-size: 30px !important; 
+    border: 1px solid rgb(1, 1, 105) !important;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.owl-dot {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+}
+/* page equipe */
+#equipe_content
+{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+#equipe_content  a
+{
+    text-decoration: none;
+    color: black;
+}
+#equipe_content img
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 10px white;
+    box-shadow: 0px 0px 10px 10px rgba(1, 1, 105, 0.3);
+}
+#equipe_content h2
+{
+    float: left;
+    margin-top: 17px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(1, 1, 105) !important;
+}
+#equipe_content p
+{
+    float: left;
+    text-align: center;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+/* Don */
+
+#pourquoi_donner
+{
+    float: left;
+    width: 100%;
+    padding: 20px 10%;
+}
+#pourquoi_donner h2
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: rgb(1, 1, 105);
+    margin-bottom: 15px;
+}
+#pour_sante
+{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#don
+{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    background-image: url('../image/bg.JPG');
+    background-position: center;
+    background-color: rgba(0, 0 ,0, 0.3);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 50px 10%;
+}
+
+
+
+
+#infos_perso
+{
+    float: left;
+    width: 40%;
+    margin-left: 10px;
+    background-color: rgba(1, 156, 27, 0.3);
+    padding: 20px 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+#infos_perso h2
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#infos_perso input
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 13px;
+    border: 1px solid #008f39;
+    border-radius: 10px;
+}
+#infos_perso input:focus
+{
+    outline: none;
+    border: 2px solid #008f39;
+}
+#infos_perso input::placeholder
+{
+    font-size: 15px;
+    color: #008f39;
+}
+
+
+
+
+
+
+#donation_container
+{
+    float: left;
+    background: rgba(1, 156, 27, 0.3);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 50%;
+    text-align: center;
+    margin-left: 7%;
+}
+
+ 
+#donation_container h2
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+#donation_container input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#donation_container .montant-options, .frequency-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#donation_container .montant-options input, .frequency-options input 
+{
+    margin-right: 10px;
+}
+
+#donation_container .montant-options label, .frequency-options label {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    
+}
+
+#donation_container button {
+    background-color: #008f39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in-out;
+    font-size: 16px;
+}
+
+#donation_container button:hover 
+{
+    background-color: white;
+    color: #008f39;
+}
+
+/* Nouveau style pour les boutons de fréquence */
+#donation_container .montant-options input[type="radio"], .frequency-options input[type="radio"] {
+    display: none;
+}
+
+#donation_container .montant-options label, .frequency-options label 
+{
+    background-color: white;
+    border: 1.5px solid #008f39;
+    color: #008f39;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+#donation_container .montant-options input[type="radio"]:checked + label, .frequency-options input[type="radio"]:checked + label {
+    background-color: #008f39;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#donation_container .montant-options label:hover, .frequency-options label:hover {
+    background-color: rgb(224, 224, 224);
+}    
+
+/* Pour le champ de montant personnalisé */
+#donation_container input[type="number"] {
+    display: none; /* Cache au départ */
+    margin-top: 10px;
+    border: 1px solid #008f39;
+}
+#donation_container input[type="number"]:focus
+{
+    outline: none;
+    border: 2px solid #008f39;
+}
+#donation_container .label_titre
+{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+#donation_container input::placeholder
+{
+    font-size: 15px;
+    color: #008f39;
+}
+
+
+
+
+
+
+#securite_don
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    padding: 20px 5%;
+    gap: 70px;
+}
+#securite_don h2
+{
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+#securite_don p
+{
+    float: left;
+    font-size: 13px;
+}
+
+
+/* les sections */
+#banner_section
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 2px;
+}
+#banner_section h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_section p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+}
+
+
+#les_sections
+{
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 8%;
+    text-align: center;
+}
+#les_sections h2
+{
+    color: rgb(1, 1, 105);
+    font-size: 25px;
+    margin-top: 70px;
+}
+#les_sections p
+{
+    color: black;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* section sante */
+#section_sante
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 30px 10%;
+
+}
+#section_sante img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+#section_sante h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+#section_sante p
+{
+    font-size: 18px; 
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+/* sectione education */
+#section_education
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 50px 10%;
+
+}
+#section_education img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+#section_education h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+#section_education p
+{
+    font-size: 18px; 
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+/* section culture */
+#section_culture
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 50px 10%;
+}
+#section_culture img
+{
+    width: 100%;
+    border-radius: 3px;
+}
+#section_culture h2
+{
+    color: #008f39;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+#section_culture p
+{
+    font-size: 18px; 
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+#banner_contact
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 2px;
+}
+#banner_contact h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_contact p
+{
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+#contact h2
+{
+    display: none;
+}
+#contact
+{
+    float: left;
+    width: 50%;
+    margin-left: 10%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#contact input
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(1, 1, 105);
+    border-radius: 10px;
+}
+#contact input:focus
+{
+    outline: none;
+    border: 2px solid rgb(1, 1, 105);
+}
+#contact input::placeholder
+{
+    font-size: 15px;
+    color: rgb(1, 1, 105);
+}
+#contact textarea
+{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(1, 1, 105);
+    border-radius: 10px;
+    height: 150px;
+}
+#contact textarea::placeholder
+{
+    font-size: 16px;
+    color: rgb(1, 1, 105);
+}
+#contact textarea:focus
+{
+    outline: none !important;
+    border: 2px solid rgb(1, 1, 105);
+}
+#contact button
+{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+    border: none;
+}
+#contact button:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 1, 105);
+    border: 1px solid rgb(1, 1, 105);
+}
+
+#adresse
+{
+    float: left;
+    margin-top: 130px;
+    width: 30%;
+    margin-left: 20px;
+}
+#adresse p
+{
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+    color: rgb(1, 1, 105);
+    font-size: 17px;
+    margin-top: 10px;
+}
+#adresse a
+{
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+    color: rgb(1, 1, 105);
+    font-size: 17px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#adresse h2
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: rgb(1, 1, 105);
+}
+#adresse ion-icon
+{
+    background-color: rgb(1, 1, 105);
+    margin-right: 3px;
+    padding : 10px;
+    border-radius:50%;
+    height : 20px;
+    width : 20px;
+    object-fit: cover;
+    margin-bottom: -13px;
+    margin-left: 11px;
+    margin-top : 10px;
+    color: white;
+}
+
+
+
+
+
+
+/* blog */
+#banner_blog
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+#banner_blog a
+{
+    float: left;
+    margin-left: 35%;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 3%;
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#banner_blog a:hover
+{
+    background-color: white;
+    color: rgb(1, 1, 105);
+    transition: 0.5s;
+    font-size: 15.5px;
+}
+#banner_blog ion-icon
+{
+    width: 15px;
+    margin-left: -1px;
+    margin-bottom: -3px;
+}
+#banner_blog h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_blog p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+}
+#h2_blog
+{
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    color: rgb(1, 1, 105);
+    font-size: 20px;
+}
+#blog
+{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 10%;
+    gap: 50px;
+}
+#blog img
+{
+    float: left;
+    width: 80%;
+    border-radius: 10px;
+}
+#blog span
+{
+    float: left;
+    width: 60%;
+    color: rgb(1, 1, 105);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#blog h2
+{
+    float: left;
+    width: 60%;
+    color: rgb(235, 106, 14);
+    font-size: 20px;
+}
+#blog p
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+    line-height: 1.5;
+}
+#blog .blog_contaner a
+{
+    float: left;
+    border-radius: 7px 20px;
+    text-decoration: none;
+    color: rgb(1, 1, 105);
+    transition: transform 0.3s ease-in-out; 
+}
+#blog .blog_contaner a:hover
+{
+    transform: scale(1.02);
+}
+#blog ion-icon
+{
+    margin-bottom: -5px;
+    margin-left: 1px;
+}
+#blog .blog_contaner
+{
+    background-color: rgb(253, 253, 253);
+    float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px 5%;
+    transition: transform 0.5s ease-in-out; 
+}
+#blog .blog_contaner:hover
+{
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pied */
+#pied
+{
+    float: left;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0 ,0, 0.8), rgba(1, 1, 105, 0.8)), url('../image/bg.JPG') no-repeat bottom center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 90px 5%;
+    gap: 50px;
+    margin-top: 70px;
+}
+#pied h2
+{
+    color: rgb(235, 106, 14);
+}
+
+#pied a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+    transition: transform 0.5s ease-in-out; 
+}
+#pied a:hover
+{
+    transform: scale(1.02);
+}
+#pied .ion-icon ion-icon
+{
+    margin-bottom: -4px;
+}
+#pied ul
+{
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#pied li
+{
+    float: left;
+    height: 40px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+#pied p
+{
+    color: white;
+    margin-top: 8px;
+    font-size: 15px;
+}
+#pied ul ion-icon
+{
+    margin-bottom: 5px;
+    color: rgb(1, 1, 105);
+}
+#pied .email, ion-icon
+{
+    margin-bottom: -3px;
+}
+#pied .location ion-icon
+{
+    margin-bottom: -3px;
+}
