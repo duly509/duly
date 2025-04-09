@@ -72,7 +72,7 @@ html, body {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 50px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -516,7 +516,7 @@ html, body {
 }
 #pied a
 {
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 /* banner_benevolat */
 #banner_benevolat
