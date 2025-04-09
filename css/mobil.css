@@ -13,6 +13,7 @@ html, body {
     box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
     position: fixed;
     z-index: 1000;
+    margin-bottom: 70px;
 }
 .menu-bar
 {
@@ -670,7 +671,7 @@ html, body {
 }
 #banner_benevolat p
 {
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 5px;
 }
 /* don */
@@ -681,7 +682,7 @@ html, body {
 #pourquoi_donner h2
 {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-size: 20px;
 }
 #don

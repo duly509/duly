@@ -41,7 +41,7 @@ body
     position: fixed;
     z-index: 1000;
     box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
-
+    margin-bottom: 70px;
 }
   
 .menu-bar ul {
@@ -135,7 +135,6 @@ body
     background-size: cover;  
     padding: 180px 15%;
     text-align: center;
-    margin-top: 70px;
 }
 #banner h2
 {
