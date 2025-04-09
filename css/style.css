@@ -283,7 +283,6 @@ body
     font-size: 16px;
     color: white;
     text-decoration: none;
-    margin-left: 25%;
     margin-top: 50px;
 }
 #benevolat_section1 a:hover
@@ -327,7 +326,6 @@ body
     font-size: 16px;
     color: white;
     text-decoration: none;
-    margin-left: 28%;
     margin-top: 50px;
 }
 #benevolat_section2 a:hover
@@ -991,15 +989,16 @@ body
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 20px;
+    margin-top: 70px;
     padding: 20px 5%;
-    gap: 70px;
+    gap: 30px;
 }
 #securite_don h2
 {
     float: left;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 15px;
     width: 100%;
 }
 #securite_don p

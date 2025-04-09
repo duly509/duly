@@ -13,7 +13,6 @@ html, body {
     box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
     position: fixed;
     z-index: 1000;
-    margin-bottom: 70px;
 }
 .menu-bar
 {
@@ -141,6 +140,7 @@ html, body {
 #banner
 { 
     padding: 100px 5%;
+    margin-top: 70px;
 }
 #banner h2
 {
@@ -421,6 +421,7 @@ html, body {
 #banner_equipe
 {
     padding: 60px 5%;
+    margin-top: 70px;
 }
 #banner_equipe h2
 {
@@ -524,7 +525,7 @@ html, body {
     background-size: cover;    
     padding: 100px 10%;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 70px;
 }
 #banner_benevolat h2
 {
@@ -597,6 +598,7 @@ html, body {
 #banner_contact
 {   
     padding: 100px 10%;
+    margin-top: 70px;
 }
 #banner_contact p
 {
@@ -664,6 +666,7 @@ html, body {
 #banner_benevolat
 {    
     padding: 100px 10%;
+    margin-top: 70px;
 }
 #banner_benevolat h2
 {
@@ -677,7 +680,8 @@ html, body {
 /* don */
 #pourquoi_donner
 {
-    padding: 20px 5%;
+    padding: 0px 5%;
+    margin-top: 60px;
 }
 #pourquoi_donner h2
 {
@@ -693,7 +697,6 @@ html, body {
 {
     width: 100%;
     margin-left: 0px;
-
 }
 #donation_container
 {
