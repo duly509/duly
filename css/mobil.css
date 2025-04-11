@@ -13,6 +13,7 @@ html, body {
     box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
     position: fixed;
     z-index: 1000;
+    border-bottom: solid 01px rgba(1, 1, 105, 0.3);
 }
 .menu-bar
 {
@@ -71,7 +72,7 @@ html, body {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 50px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -282,6 +283,18 @@ html, body {
 }
 
 /* blog */
+#banner_blog
+{
+    padding: 100px 5%;
+    margin-top: 70px;
+}
+#banner_blog a
+{
+    border-radius: 10px;
+    padding: 7px 5%;
+    font-size: 12px;
+    margin-top: 15px;
+}
 #blog
 {
     grid-template-columns: repeat(2, 1fr);
@@ -662,6 +675,14 @@ html, body {
     flex-direction: column-reverse; /* Inverse l'ordre des éléments */
 
 }
+/* #banner_contact a
+{
+    border-radius: 10px;
+    padding: 5px 2%;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 0;
+} */
 #contact h2
 {
     display: block;
@@ -678,7 +699,6 @@ html, body {
 }
 #adresse
 {
-    float: left;
     margin-top: -40px;
     width: 100%;
     margin-left: 0px;
@@ -691,12 +711,18 @@ html, body {
 #adresse a
 {
     color: rgb(255, 255, 255) !important;
+    text-underline-offset: 3px;
 }
 #adresse h2
 {
     color: rgb(255, 255, 255);
 }
 
+/* parti partenaire */
+#partenaire
+{
+    padding: 0px 5%;
+}
 
 
 

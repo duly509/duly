@@ -41,7 +41,7 @@ body
     position: fixed;
     z-index: 1000;
     box-shadow: 1px 1px 5px rgba(1, 1, 105, 0.2);
-    margin-bottom: 70px;
+    border-bottom: solid 01px rgba(1, 1, 105, 0.3);
 }
   
 .menu-bar ul {
@@ -135,6 +135,7 @@ body
     background-size: cover;  
     padding: 180px 15%;
     text-align: center;
+    margin-top: 75px;
 }
 #banner h2
 {
@@ -149,8 +150,7 @@ body
 }
 #banner a
 {
-    float: left;
-    margin-left: 35%;
+    display: inline-block;
     background-color: rgb(1, 1, 105);
     transition: background-color 0.5s ease-in-out;
     color: white;
@@ -166,6 +166,7 @@ body
     background-color: white;
     color: rgb(1, 1, 105);
     transition: transform 0.3s ease-in-out; 
+    
 }
 #banner a:hover
 {
@@ -568,8 +569,7 @@ body
 }
 #banner_equipe a
 {
-    float: left;
-    margin-left: 35%;
+    display: inline-block;
     background-color: rgb(1, 1, 105);
     transition: background-color 0.5s ease-in-out;
     color: white;
@@ -731,6 +731,27 @@ body
     height: 14px;
     margin: 5px;
 }
+/* parti partenaire */
+#banner_contact a
+{
+    display: inline-block;
+    background-color: rgb(1, 1, 105);
+    transition: background-color 0.5s ease-in-out !important;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 3%;
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#banner_contact a:hover
+{
+    background-color: white;
+    color: rgb(1, 1, 105);
+    transition: transform 0.3s ease-in-out; 
+}
+
 /* page equipe */
 #equipe_content
 {
@@ -1181,8 +1202,32 @@ body
 
 
 
-
-
+/* partenaire */
+#banner_newsletter
+{
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../image/benevolat_photo.JPG');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;    
+    padding: 100px 20%;
+    text-align: center;
+    margin-top: 70px;
+}
+#banner_newsletter h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_newsletter p
+{
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
 
 
 
@@ -1202,9 +1247,9 @@ body
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;    
-    padding: 100px 20%;
+    padding: 120px 20%;
     text-align: center;
-    margin-top: 85px;
+    margin-top: 80px;
 }
 #banner_contact h2
 {
@@ -1217,6 +1262,7 @@ body
     color: white;
     line-height: 1.5;
 }
+
 #contact h2
 {
     display: none;
@@ -1358,13 +1404,12 @@ body
     background-size: cover;    
     padding: 100px 20%;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 #banner_blog a
 {
-    float: left;
-    margin-left: 35%;
+    display: inline-block;
     background-color: rgb(1, 1, 105);
     transition: background-color 0.5s ease-in-out;
     color: white;
@@ -1379,8 +1424,13 @@ body
 {
     background-color: white;
     color: rgb(1, 1, 105);
+    transition: transform 0.3s ease-in-out; 
+    
+}
+#banner_blog a:hover
+{
+    transform: scale(1.02);
     transition: 0.5s;
-    font-size: 15.5px;
 }
 #banner_blog ion-icon
 {
@@ -1405,6 +1455,7 @@ body
     float: left;
     width: 100%;
     margin-top: 70px;
+    margin-bottom: 20px;
     text-align: center;
     color: rgb(1, 1, 105);
     font-size: 20px;
@@ -1476,6 +1527,36 @@ body
 {
     transform: scale(1.02);
 }
+
+/* partenaire */
+#partenaire
+{
+    float: left;
+    margin-top: 70px;
+    padding: 0px 5%;
+}
+#partenaire p
+{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+#partenaire a
+{
+    color : rgb(1, 1, 105);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
