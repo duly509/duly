@@ -1310,7 +1310,6 @@ body
     color: rgb(1, 1, 105);
     font-size: 17px;
     margin-top: 10px;
-    text-decoration: none;
 }
 #adresse h2
 {
@@ -1332,6 +1331,13 @@ body
     margin-left: 11px;
     margin-top : 10px;
     color: white;
+}
+#adresse ion-icon:hover
+{
+    transition: 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 1, 105);
+    border: solid 1px rgb(1, 1, 105);;
 }
 
 

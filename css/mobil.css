@@ -681,11 +681,12 @@ html, body {
     float: left;
     margin-top: -40px;
     width: 100%;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 #adresse p
 {
     color: rgb(255, 255, 255) !important;
+    line-height: 1.5;
 }
 #adresse a
 {
