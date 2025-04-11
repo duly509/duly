@@ -280,6 +280,7 @@ html, body {
     padding: 5px 3%;
     margin-left: 25%;
 }
+
 /* blog */
 #blog
 {
@@ -305,11 +306,27 @@ html, body {
     margin-bottom: -4px;
 }
 /* les sections */
+#banner_section
+{    
+    padding: 120px 5%;
+}
+#banner_section h2
+{
+    font-size: 23px;
+    color: white;
+}
+#banner_section p
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+}
 #les_sections
 {
     float: left;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 5%;
 }
 #les_sections h2
@@ -387,6 +404,17 @@ html, body {
     font-size: 14px;
     line-height: 1.2;
 }
+/* Position de la flèche gauche */
+.owl-carousel .owl-nav button.owl-prev {
+    margin-left: -60px;
+    margin-top: -60px;
+}
+
+/* Position de la flèche droite */
+.owl-carousel .owl-nav button.owl-next {
+    right: -60px;
+    margin-top: -60px;
+}
 #button-equipe
 {
     float: left;
@@ -451,7 +479,12 @@ html, body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 100px;
+    place-items: center;
 }
+#equipe_content a > div {
+    text-align: center; /* 👈 Sa santre tout sa ki anndan l: imaj, h2, p */
+}
+
 #equipe_content  a
 {
     text-decoration: none;
@@ -459,10 +492,8 @@ html, body {
 }
 #equipe_content img
 {
-    float: left;
     width: 200px;
     height: 200px;
-    margin-left: 110px;
     justify-content: center;
     border-radius: 50%;
     object-fit: cover;
@@ -482,7 +513,6 @@ html, body {
 {
     float: left;
     text-align: center;
-    margin-top: -5px;
     font-size: 15px;
     color: rgb(1, 1, 105);
 }
@@ -538,7 +568,16 @@ html, body {
     margin-top: 5px;
 }
 /* benevolat description */
-
+#benevolat_section1 a
+{
+    margin-left: -0;
+    margin-top: 30px;
+}
+#benevolat_section2 a
+{
+    margin-left: -0;
+    margin-top: 30px;
+}
 #pourquoi_le_benevolat
 {
     margin-top: 30px;
@@ -589,7 +628,7 @@ html, body {
 #bienfaits p
 {
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
     text-align: left;
     line-height: 1.5;
