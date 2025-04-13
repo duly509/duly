@@ -1356,6 +1356,7 @@ body
     color: rgb(1, 1, 105);
     font-size: 17px;
     margin-top: 10px;
+    text-underline-offset: 4.5px;
 }
 #adresse h2
 {
@@ -1548,6 +1549,37 @@ body
 
 
 
+#h1_formulaire
+{
+    float: left;
+    display: flex;
+    width: 100%;
+    padding: 10px 5%;
+    color: rgb(180, 12, 12);
+    background-color: beige;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -70px;
+}
+#h1_formulaire h1
+{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1579,7 +1611,7 @@ body
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 90px 5%;
+    padding: 5% 5%;
     gap: 50px;
     margin-top: 70px;
 }
