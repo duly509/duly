@@ -297,7 +297,7 @@ html, body {
 }
 #blog
 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 0px 5%;
     gap: 30px;
 }
@@ -305,7 +305,15 @@ html, body {
 {
     width: 100%;
 }
-
+#blog .blog_contaner
+{
+    background-color: rgb(253, 253, 253);
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 5px 3%;
+    transition: transform 0.5s ease-in-out; 
+}
 #blog h2
 {
     width: 100%;
@@ -510,8 +518,8 @@ html, body {
     justify-content: center;
     border-radius: 50%;
     object-fit: cover;
-    border: solid 10px white;
-    box-shadow: 0px 0px 10px 10px rgba(1, 1, 105, 0.3);
+    border: solid 6px white;
+    box-shadow: 0px 0px 7px 6px rgba(1, 1, 105, 0.1);
 }
 #equipe_content h2
 {
@@ -701,17 +709,17 @@ html, body {
 {
     margin-top: -40px;
     width: 100%;
-    margin-left: 0px;
+    margin-left: -10px;
 }
 #adresse p
 {
     color: rgb(255, 255, 255) !important;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 #adresse a
 {
     color: rgb(255, 255, 255) !important;
-    text-underline-offset: 3px;
+    text-underline-offset: 4.5px;
 }
 #adresse h2
 {

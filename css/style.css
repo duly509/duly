@@ -629,7 +629,7 @@ body
   
 .owl-carousel .item img:hover 
 {
-    transform: scale(1.1); 
+    transform: scale(1); 
 }
   
 
@@ -771,7 +771,7 @@ body
 #equipe_content  a
 {
     text-decoration: none;
-    color: black;
+    color:rgb(1, 1, 105);
     transition: transform 0.3s ease-in-out;
 }
 #equipe_content  a:hover
@@ -786,8 +786,8 @@ body
     justify-content: center;
     border-radius: 50%;
     object-fit: cover;
-    border: solid 7px white;
-    box-shadow: 0px 0px 10px 10px rgba(1, 1, 105, 0.3);
+    border: solid 6px white;
+    box-shadow: 0px 0px 10px 10px rgba(1, 1, 105, 0.2);
 } 
 #equipe_content h2
 {
@@ -1473,7 +1473,7 @@ body
 #blog img
 {
     float: left;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
 }
 #blog span
@@ -1508,7 +1508,7 @@ body
 }
 #blog .blog_contaner a:hover
 {
-    transform: scale(1.02);
+    transform: scale(1);
 }
 #blog ion-icon
 {
@@ -1519,7 +1519,7 @@ body
 {
     background-color: rgb(253, 253, 253);
     float: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 10px 5%;
     transition: transform 0.5s ease-in-out; 
 }
