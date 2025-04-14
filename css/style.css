@@ -415,14 +415,14 @@ body
 #apropos
 {
     float: left;
-    background-color: rgba(243, 243, 243, 0.3);
+    background-color: rgba(243, 243, 243, 0.5);
     margin-top: 50px;
 }
 /* section */
 #section
 {
     float: left;
-    background-color: rgba(245, 245, 220, 0.3);
+    background-color: rgba(245, 245, 220, 0.5);
     margin-top: 50px;
     margin-bottom: 56px;
 }
@@ -1576,11 +1576,12 @@ body
     justify-content: center;
     align-items: center;
     margin-bottom: -70px;
+    font-size: 25px;
 }
 #h1_formulaire h1
 {
     width: 100%;
-    font-size: 20px;
+   
 }
 
 
