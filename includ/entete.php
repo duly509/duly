@@ -12,7 +12,7 @@
                       <a href="equipe.php"> Equipe<i class="fas fa-caret-right"></i></a>
                       
                     </li>
-                    <li><a href="#">Aticles</a></li>
+                    <li><a href="blog.php">Aticles</a></li>
                   </ul>
                 </div>
           </li>
