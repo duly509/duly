@@ -17,7 +17,55 @@
     <title>A-propos</title>
 </head>
 <body>
-<?php include("includ/entete.php");?>
+ 
+    <div class="menu-bar">
+        <img src="image/logoceducc.png" id="logo">
+        <ul>
+          <li><a href="index.html"> Accueil</a></li>
+          <li><a href="apropos.html">A propos <ion-icon name="arrow-down-outline"></ion-icon></a></i>
+              <div class="dropdown-menu">
+                <ul>
+                    <li><a href="apropos.html">Qui-sommes nous?</a></li>
+                    <li><a href="partenaire.html">Partenaire</a></li>
+                    <li>
+                      <a href="equipe.html"> Equipe<i class="fas fa-caret-right"></i></a>
+                      
+                    </li>
+                    <li><a href="blog.html">Aticles</a></li>
+                  </ul>
+                </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="benevolat.html">Faire du benevolat</a>
+          </li>
+          <li> <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a></li>
+          <li> <a href="section.html">Les sections </a></li>
+        </ul>
+      </div>
+
+
+      <!-- menu tel -->
+      <div id="entete">
+        <img src="image/logoceducc.png" id="logo_tel"/>
+        <div onclick="affichermenu();" id="menu_boutton">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu">
+            <div onclick="enlevermenu();" class="cross">
+                <div class="x"></div>
+            </div>
+            <a href="index.html"> Accueil</a>
+            <a href="apropos.html">A propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="benevolat.html">Faire du benevolat</a>
+            <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
+            <a href="section.html">Les sections</a>
+           
+        </div>
+    </div>
+
 
 
     <!-- banner -->
@@ -171,16 +219,14 @@
     
         <div>
             <h2>Contact</h2>
-                <p><ion-icon name="call-outline"></ion-icon> : 37682323</p>
-                <p><ion-icon name="mail-outline"></ion-icon> : lyovensdurandisse@gmail.com</p>
-                <p><ion-icon name="location-outline"></ion-icon> : Route de Darbonne, Leogane Haiti #20</p>
-    
-                <ul class="contact">
-                    <li><ion-icon name="logo-instagram"></ion-icon></li>
-                    <li><ion-icon name="logo-facebook"></ion-icon></li>
-                    <li><ion-icon name="logo-twitter"></ion-icon></li>
-                </ul>
-                
+            <p> <a href="tel:37682323"><ion-icon name="call-outline"></ion-icon> : Appelle-moi</a> </p>
+             <a href="mailto: lyovensdurandisse@gmail.com" class="email"><ion-icon name="mail-outline"></ion-icon> : Email  </a>
+             <p class="location"><ion-icon name="location-outline"></ion-icon> : Route de Darbonne, Leogane Haiti #20</p>
+            <ul>
+                <li> <a href="https://www.facebook.com/lyovens.durandisse.52"> <ion-icon name="logo-facebook"></ion-icon> </a></li>
+                <li><a href="https://instagram.com/saj_multi_services?igshid=MzNlNGNkZWQ4Mg=="> <ion-icon name="logo-instagram"></ion-icon> </a> </li>
+                <li><a href="https://twitter.com/saj_multi?s=09"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
         </div>
     
        </div>
