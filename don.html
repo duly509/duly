@@ -233,7 +233,7 @@
         <a href="section.html"><ion-icon name="arrow-forward-outline"></ion-icon> Education</a>
         <a href="section.html"><ion-icon name="arrow-forward-outline"></ion-icon> PFE</a>
         <a href="don.html"><ion-icon name="arrow-forward-outline"></ion-icon> WASH/C-TED</a>
-        <a href="section.html"compte"><ion-icon name="arrow-forward-outline"></ion-icon> Sante</a>
+        <a href="section.html"compte><ion-icon name="arrow-forward-outline"></ion-icon> Sante</a>
         <a href="section.html"><ion-icon name="arrow-forward-outline"></ion-icon> Culture</a>
     </div>
 
@@ -251,7 +251,23 @@
     </div>
 
    </div>
+   <script>
+    // Cibler les éléments
+    const autreRadio = document.getElementById("montantAutre");
+    const autreInput = document.getElementById("autreMontant");
+    const montantRadios = document.querySelectorAll('input[name="montant"]');
 
+    // Ajouter un écouteur sur tous les boutons radio
+    montantRadios.forEach(radio => {
+        radio.addEventListener("change", function() {
+            if (autreRadio.checked) {
+                autreInput.style.display = "block";
+            } else {
+                autreInput.style.display = "none";
+            }
+        });
+    });
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
