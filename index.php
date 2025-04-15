@@ -17,66 +17,15 @@
     <title>Acceuil</title>
 </head>
 <body>
-    <div class="menu-bar">
-        <img src="image/logoceducc.png" id="logo">
-        <ul>
-          <li><a href="index.html"> Accueil</a></li>
-          <li><a href="apropos.html">A propos <ion-icon name="arrow-down-outline"></ion-icon></a></i>
-              <div class="dropdown-menu">
-                  <ul>
-                    <li><a href="apropos.html">Qui-sommes nous?</a></li>
-                    <li><a href="partenaire.html">Partenaire</a></li>
-                    <li>
-                      <a href="equipe.html"> Equipe<i class="fas fa-caret-right"></i></a>
-                      
-                    </li>
-                    <li><a href="#">Aticles</a></li>
-                  </ul>
-                </div>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="benevolat.html">Faire du benevolat</a>
-          </li>
-          <li> <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a></li>
-          <li> <a href="section.html">Les sections </a></li>
-        </ul>
-      </div>
-
-
-      <!-- menu tel -->
-      <div id="entete">
-        <img src="image/logoceducc.png" id="logo_tel"/>
-        <div onclick="affichermenu();" id="menu_boutton">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div id="menu">
-            <div onclick="enlevermenu();" class="cross">
-                <div class="x"></div>
-            </div>
-            <a href="index.html">Accueil</a>
-            <a href="apropos.html">A propos</a>
-            <a href="contact.html">Contact</a>
-            <a href="benevolat.html">Faire du benevolat</a>
-            <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
-            <a href="section.html">Les sections</a>
-            <a href="apropos.html">Qui-sommes nous?</a>
-            <a href="partenaire.html">Partenaire</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="blog.html">Articles</a>
-           
-        </div>
-    </div>
-
-
+   
+<?php include("includ/entete.php");?>
 
  <!-- banner -->
 
  <div id="banner">
     <h2>C'entre pour l'Education Communautaire et de la Culture (CEDUCC)</h2>
     <p>Eduquer, Participer et s'Entraider pour un Mieux-etre Collectif !</p>
-    <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
+    <a href="don.php">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
 
 
 </div>
@@ -95,7 +44,13 @@
         </div>
      
       </div>
-     
+     <!-- php -->
+
+
+
+
+
+
       <div id="mission-content">
          <h2>Notre mission</h2>
          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor culpa aliquid perferendis consequuntur velit voluptatum placeat dicta quod. Necessitatibus eos corporis deserunt similique? Quo vel doloremque, explicabo magni sapiente laborum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis velit numquam id commodi facere eveniet fuga? Dolorum veritatis adipisci odio id iste numquam, voluptates, iusto, aliquid molestiae error exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut animi cumque fugit sint atque a quos aliquam asperiores consequatur tempora, ex quas ipsum! Eligendi quod a ut doloremque consequuntur.</p>
@@ -112,7 +67,7 @@
  <div id="pourquoi_le_benevolat">
     <h2>Devenir benevole à CEDUCC </h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente odio delectus commodi, deleniti, perferendis natus quae asperiores, quidem sit quo nobis laborum magnam voluptates! Consequuntur quasi eius soluta explicabo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias nostrum mollitia assumenda perferendis, ad voluptate explicabo neque quas in accusantium quibusdam adipisci nobis voluptatum repellat unde excepturi vero modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vel iste! Delectus adipisci dolorum quis modi quia dignissimos rem temporibus quasi iure ducimus in nemo, voluptatum tenetur nobis. Nisi, minus?</p>
-    <a href="benevolat_formulaire.html">Retrouvez nos bénévoles</a>
+    <a href="benevolat_formulaire.php">Retrouvez nos bénévoles</a>
 </div>
 
 <div id="benevolat_section1">
@@ -122,7 +77,7 @@
    <div>
     <h2>Faire du benevolat avec les enfants</h2>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, consequatur a inventore ducimus natus praesentium rerum quas expedita eligendi aliquam accusantium non placeat cupiditate, mollitia blanditiis quos maxime reprehenderit. </p>
-    <a href="benevolat_formulaire.html">Remplir le formulaire</a>
+    <a href="benevolat_formulaire.php">Remplir le formulaire</a>
    </div>
 </div>
 
@@ -130,7 +85,7 @@
     <div>
      <h2>Faire du bénévolat avec les PDI</h2>
      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam, consequatur a inventore ducimus natus praesentium rerum quas expedita eligendi aliquam accusantium non placeat cupiditate, mollitia blanditiis quos maxime reprehenderit. </p>
-     <a href="benevolat_formulaire.html">Remplir le formulaire</a>
+     <a href="benevolat_formulaire.php">Remplir le formulaire</a>
     </div>
     <div>
         <img src="image/historiciter_photo.JPG">
@@ -153,7 +108,7 @@
 
 <div id="blog">
     <div class="blog_contaner">
-       <a href="blog.html">
+       <a href="blog.php">
         <img src="image/foto.JPG">
         <span>Le 25/4/2024</span>
         <h2>Nos activites</h2>
@@ -163,7 +118,7 @@
     </div>
 
     <div class="blog_contaner">
-       <a href="blog.html">
+       <a href="blog.php">
         <img src="image/bg.JPG">
         <span>Le 25/4/2024</span>
         <h2>Nos activites</h2>
@@ -173,7 +128,7 @@
     </div>
 
     <div class="blog_contaner">
-       <a href="blog.html">
+       <a href="blog.php">
         <img src="image/bg.JPG">
         <span>Le 25/4/2024</span>
         <h2>Nos activites</h2>
@@ -221,17 +176,17 @@
     <h2>Notre equipe</h2>
  </div>
  <div class="owl-carousel owl-theme">
-    <div class="item"> <a href="equipe.html#Joseph">
+    <div class="item"> <a href="equipe.php#Joseph">
         <img src="image/foto.JPG">
         <h2>Jean Marie</h2>
         <p>Responsable jeune</p>
        </a></div>
-    <div class="item"> <a href="equipe.html#Jean">
+    <div class="item"> <a href="equipe.php#Jean">
         <img src="image/foto.JPG">
         <h2>Jean Marie</h2>
         <p>Responsable jeune</p>
        </a></div>
-    <div class="item"> <a href="equipe.html#Michel">
+    <div class="item"> <a href="equipe.php#Michel">
         <img src="image/foto.JPG">
         <h2>Michel Ramford</h2>
         <p>Responsable resource</p>
@@ -239,7 +194,7 @@
 
 </div>
 <div id="button-equipe">
-    <a href="equipe.html" class="bouton-equipe">Voir Plus</a>
+    <a href="equipe.php" class="bouton-equipe">Voir Plus</a>
 
 </div>
 

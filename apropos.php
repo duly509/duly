@@ -17,57 +17,7 @@
     <title>A-propos</title>
 </head>
 <body>
-    <div class="menu-bar">
-        <img src="image/logoceducc.png" id="logo">
-        <ul>
-          <li><a href="index.html"> Accueil</a></li>
-          <li><a href="apropos.html">A propos <ion-icon name="arrow-down-outline"></ion-icon></a></i>
-              <div class="dropdown-menu">
-                  <ul>
-                    <li><a href="apropos.html">Qui-sommes nous?</a></li>
-                    <li><a href="#">Partenaire</a></li>
-                    <li>
-                      <a href="#"> Equipe<i class="fas fa-caret-right"></i></a>
-                      
-                    </li>
-                    <li><a href="#">Articles</a></li>
-                  </ul>
-                </div>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="benevolat.html">Faire du benevolat</a>
-          </li>
-          <li> <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a></li>
-          <li> <a href="section.html">Les sections </a></li>
-        </ul>
-      </div>
-
-
-      <!-- menu tel -->
-      <div id="entete">
-        <img src="image/logoceducc.png" id="logo_tel"/>
-        <div onclick="affichermenu();" id="menu_boutton">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div id="menu">
-            <div onclick="enlevermenu();" class="cross">
-                <div class="x"></div>
-            </div>
-            <a href="index.html">Accueil</a>
-            <a href="apropos.html">A propos</a>
-            <a href="contact.html">Contact</a>
-            <a href="benevolat.html">Faire du benevolat</a>
-            <a href="don.html">Faire un don <ion-icon name="heart-outline"></ion-icon></a>
-            <a href="section.html">Les sections</a>
-            <a href="apropos.html">Qui-sommes nous?</a>
-            <a href="partenaire.html">Partenaire</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="blog.html">Articles</a>
-           
-        </div>
-    </div>
+<?php include("includ/entete.php");?>
 
 
     <!-- banner -->
