@@ -50,6 +50,12 @@ body
 .menu-bar ion-icon 
 {
     color: rgb(1, 1, 105);
+    margin-bottom: -3px;
+    
+}
+.menu-bar ion-icon:hover
+{
+    color: #0073ff;
     
 }
 .menu-bar {
@@ -80,13 +86,13 @@ body
     font-size: 18px;
     color: var(--color-white);
     text-decoration: none;
-    transition: all 0.3s;
 }
   
-  .menu-bar ul li a:hover {
+.menu-bar ul li a:hover 
+{
     color: var(--color-primary);
-  }
-  
+}
+
 
   
   /* dropdown menu style */
@@ -1394,6 +1400,11 @@ body
     font-size: 17px;
     margin-top: 10px;
     text-underline-offset: 4.5px;
+    transition: transform 0.5s ease-in-out; 
+}
+#adresse a:hover
+{
+    transform: scale(1.02);
 }
 #adresse h2
 {
@@ -1691,21 +1702,38 @@ body
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.87);
     border-radius: 5px;
-    margin-right: 8px;
-    margin-top: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 #pied p
 {
     color: white;
     margin-top: 25px;
     font-size: 15px;
+    line-height: 1.5;
 }
 #pied ul ion-icon
 {
     margin-bottom: 5px;
     color: rgb(1, 1, 105);
 }
-#pied .email, ion-icon
+#pied .email ion-icon
 {
-    margin-bottom: -3px;
+    margin-bottom: -7px;
+}
+#contact_pied a
+{
+    text-underline-offset: 4.5px;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#contact_pied ion-icon
+{
+   font-size: 25px;
+   margin-bottom: -5px;
+   transition: transform 0.5s ease-in-out; 
+}
+#contact_pied ion-icon:hover
+{
+    transform: scale(1.2);
 }
