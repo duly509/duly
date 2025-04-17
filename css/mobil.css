@@ -558,18 +558,7 @@ html, body {
 
 
 
-/* pied */
-#pied
-{
-    grid-template-columns: repeat(1, 1fr);
-    padding: 5% 5%;
-    gap: 20px;
-    margin-top: 70px;
-}
-#pied a
-{
-    margin-bottom: 15px;
-}
+
 /* banner_benevolat */
 #banner_benevolat
 {
@@ -813,4 +802,21 @@ html, body {
     transition: background-color 0.5s ease-in-out;
     width: 100%;
     text-align: center;
+}
+
+/* pied */
+#pied
+{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5% 5%;
+    gap: 20px;
+    margin-top: 70px;
+}
+#pied a
+{
+    margin-bottom: 15px;
+}
+#contact_pied a
+{
+    text-decoration: none;
 }

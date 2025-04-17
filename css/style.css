@@ -1719,12 +1719,6 @@ body
 {
     margin-bottom: -7px;
 }
-#contact_pied a
-{
-    text-underline-offset: 4.5px;
-    text-decoration: underline;
-    text-decoration-color: white;
-}
 #contact_pied ion-icon
 {
    font-size: 25px;
