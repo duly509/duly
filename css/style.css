@@ -456,12 +456,6 @@ body
 }
 
 /* historiciter */
-.image_faded
-{
-    width: 100%;
-    height: auto;
-    mask-image: linear-gradient(to right, rgb(155, 15, 15) 30%, transparent 100%);
-}
 #historiciter
 {
     float: left;
