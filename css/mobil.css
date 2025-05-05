@@ -69,11 +69,11 @@ html, body {
 #menu a
 {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
     width: 100%;
@@ -166,21 +166,43 @@ html, body {
     margin-right: -10px;
 }
 /* historiciter */
+#apropos
+{
+    float: left;
+    background-color: rgb(1, 1, 105);
+    margin-top: 50px;
+}
 #historiciter
 {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    margin: 40px 0px;
-    padding: 20px 5%;
+    gap: 20px;
+    margin: 0px 0px;
+    padding: 0 0;
 }
 #historiciter h2
 {
     margin-bottom: 5px;
+    padding: 0 5%;
+    color: white;
+
 }
 #historiciter p
 {
     font-size: 18px;
     color: black;
+    padding: 0 5%;
+    color: white;
+}
+.image_faded
+{
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgb(155, 15, 15) 40%, transparent 100%);
+}
+.image_faded img
+{
+    width: 100%;
+    border-radius: 0 !important;
 }
 /* mission */
 #mission-content
@@ -191,6 +213,12 @@ html, body {
 #mission-content p
 {
     margin-top: 15px;
+    color: white;
+}
+#mission-content h2
+{
+    margin-top: 15px;
+    color: white;
 }
 /* nos-valeurs */
 #nos-valeurs
@@ -807,16 +835,42 @@ html, body {
 /* pied */
 #pied
 {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 5% 5%;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10% 5%;
+    gap: 35px;
     margin-top: 70px;
 }
 #pied a
 {
     margin-bottom: 15px;
+    font-size: 14px;
+}
+#pied h2
+{
+    margin-bottom: 25px;
+    font-size: 19px;
 }
 #contact_pied a
 {
     text-decoration: none;
+}
+#contact_pied ion-icon
+{
+   font-size: 17px;
+   margin-bottom: -3px;
+   transition: transform 0.5s ease-in-out; 
+}
+#pied li
+{
+    float: left;
+    height: 32px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+#pied .email ion-icon
+{
+    margin-bottom: -4px;
 }

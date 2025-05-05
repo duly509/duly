@@ -450,12 +450,18 @@ body
 #section
 {
     float: left;
-    background-color: rgba(245, 245, 220, 0.5);
+    background-color: rgba(1, 1, 105, 0.2);
     margin-top: 50px;
     margin-bottom: 56px;
 }
 
 /* historiciter */
+.image_faded
+{
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to right, rgb(155, 15, 15) 30%, transparent 100%);
+}
 #historiciter
 {
     float: left;
@@ -1654,7 +1660,7 @@ body
 {
     float: left;
     width: 100%;
-    background: linear-gradient(rgba(0, 0 ,0, 0.8), rgba(1, 1, 105, 0.8)), url('../image/bg.JPG') no-repeat bottom center;
+    background: linear-gradient(rgba(0, 0 ,0, 0.9), rgba(1, 1, 105, 0.9)), url('../image/bg.JPG') no-repeat bottom center;
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1664,8 +1670,8 @@ body
 }
 #pied h2
 {
-    color: rgb(235, 106, 14);
-    margin-bottom: 20px;
+    color: white;
+    margin-bottom: 30px;
 }
 
 #pied a
@@ -1706,7 +1712,7 @@ body
 #pied p
 {
     color: white;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 15px;
     line-height: 1.5;
 }
