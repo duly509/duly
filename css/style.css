@@ -1718,7 +1718,6 @@ body
 }
 #pied ul ion-icon
 {
-    margin-bottom: 5px;
     color: rgb(1, 1, 105);
 }
 #pied .email ion-icon
@@ -1728,7 +1727,7 @@ body
 #contact_pied ion-icon
 {
    font-size: 25px;
-   margin-bottom: -5px;
+   margin-bottom: -6px;
    transition: transform 0.5s ease-in-out; 
 }
 #contact_pied ion-icon:hover

@@ -836,14 +836,14 @@ html, body {
 #pied
 {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10% 5%;
+    padding: 10% 3%;
     gap: 35px;
     margin-top: 70px;
 }
 #pied a
 {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 13px;
 }
 #pied h2
 {
@@ -863,11 +863,11 @@ html, body {
 #pied li
 {
     float: left;
-    height: 32px;
+    height: 35px;
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.87);
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 15px;
 }
 #pied .email ion-icon
