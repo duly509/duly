@@ -202,8 +202,8 @@ html, body {
 .image_faded img
 {
     width: 100%;
-    padding: 2%;
-    border-radius: 30px !important;
+    padding: 10% 2%;
+    border-radius: 60px !important;
 }
 /* mission */
 #mission-content
