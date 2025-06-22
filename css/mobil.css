@@ -181,7 +181,7 @@ html, body {
 }
 #historiciter h2
 {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding: 0 5%;
     color: white;
 
@@ -197,13 +197,14 @@ html, body {
 {
     width: 100%;
     height: auto;
-    mask-image: linear-gradient(to bottom, rgb(155, 15, 15) 10%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(155, 15, 15) 1%, transparent 100%);
 } 
 .image_faded img
 {
     width: 100%;
-    padding: 10% 2%;
-    border-radius: 60px !important;
+    padding: 0% 2%;
+    margin-top: 40px;
+    border-radius: 30px !important;
 }
 /* mission */
 #mission-content
